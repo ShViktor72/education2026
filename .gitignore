@@ -1,0 +1,7 @@
+# Word documents 
+**/*.doc
+**/*.docx
+
+# PowerPoint presentations 
+**/*.ppt
+**/*.pptx
