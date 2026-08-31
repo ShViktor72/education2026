@@ -1,0 +1,71 @@
+  <body>
+    
+    <h1>Список покупок</h1>
+    
+    <form id="shop-form">
+        <input type="text" id="item-input" placeholder="Что купить?" required>
+        <button type="submit">Добавить</button>
+    </form>
+
+    <ul id="list-container"></ul>
+    <button id="clear-btn">Очистить список</button>
+
+    <script src="js/script.js"></script>
+  </body>
+  
+// 1. ИНИЦИАЛИЗАЦИЯ ДАННЫХ 
+// Пытаемся загрузить данные, если их нет — используем пустой массив
+const rawData = localStorage.getItem('shopping_list');
+let items = rawData ? JSON.parse(rawData) : [];
+
+// Ссылки на элементы DOM
+const form = document.querySelector('#shop-form');
+const input = document.querySelector('#item-input');
+const container = document.querySelector('#list-container');
+const clearBtn = document.querySelector('#clear-btn');
+
+// 2. ФУНКЦИИ 
+// Функция сохранения данных в localStorage
+function save() {
+    // Превращаем массив объектов в JSON-строку
+    localStorage.setItem('shopping_list', JSON.stringify(items));
+}
+
+// Функция отрисовки интерфейса 
+function render() {
+    container.innerHTML = ''; // Очищаем список перед перерисовкой    
+    items.forEach((product) => {
+        const li = document.createElement('li');
+        li.className = 'item';        
+        // Добавляем текст в элемент списка 
+        li.innerHTML = `<span>${product.title}</span>`;
+        container.appendChild(li);
+    });
+}
+
+// Добавление нового товара
+form.addEventListener('submit', (e) => {
+    e.preventDefault(); // Отмена перезагрузки страницы    
+    const newItem = {
+        title: input.value,
+    };
+    items.push(newItem); // Добавляем в массив
+    save();              // Сохраняем в localStorage
+    render();            // Обновляем экран
+    input.value = '';    // Очищаем поле ввода
+});
+
+// Полная очистка
+clearBtn.addEventListener('click', () => {
+    if (confirm('Очистить весь список?')) {
+        items = [];
+        localStorage.removeItem('shopping_list'); // Или localStorage.clear()
+        render();
+    }
+});
+
+// 3. ЗАПУСК ПРИ СТАРТЕ 
+// Вызываем рендер сразу, чтобы показать сохраненные данные
+render();
+
+

@@ -1,0 +1,106 @@
+Пример формы:
+HTML:
+
+<form id="userForm">
+  <label>
+    Имя:
+    <input type="text" name="username" id="username">
+  </label>
+
+  <label>
+    Email:
+    <input type="email" name="email" id="email">
+  </label>
+
+  <button type="submit" id="submitBtn">Отправить</button>
+</form>
+
+<p id="message" class="message"></p>
+
+
+CSS:
+
+.message {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.message.error {
+  color: red;
+}
+
+.message.success {
+  color: green;
+}
+
+input.error {
+  border: 2px solid red;
+}
+
+input.success {
+  border: 2px solid green;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+JavaScript:
+
+const form = document.getElementById('userForm');
+const usernameInput = document.getElementById('username');
+const emailInput = document.getElementById('email');
+const message = document.getElementById('message');
+const submitBtn = document.getElementById('submitBtn');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  let hasError = false;
+
+  // Очистка предыдущих классов
+  usernameInput.classList.remove('error', 'success');
+  emailInput.classList.remove('error', 'success');
+  message.classList.remove('error', 'success');
+
+  // Проверка поля username
+  if (usernameInput.value.trim() === '') {
+    usernameInput.classList.add('error');
+    hasError = true;
+  } else {
+    usernameInput.classList.add('success');
+  }
+
+  // Проверка поля email
+  if (emailInput.value.trim() === '') {
+    emailInput.classList.add('error');
+    hasError = true;
+  } else {
+    emailInput.classList.add('success');
+  }
+
+  // Отображение сообщения пользователю
+  if (hasError) {
+    message.textContent = 'Пожалуйста, заполните все поля';
+    message.classList.add('error');
+    submitBtn.disabled = true; // блокировка кнопки
+  } else {
+    message.textContent = 'Форма успешно отправлена';
+    message.classList.add('success');
+    submitBtn.disabled = false; // разблокировка кнопки
+    form.reset(); // сброс формы
+    // очистка классов input после сброса
+    usernameInput.classList.remove('success');
+    emailInput.classList.remove('success');
+  }
+});
+
+// Разблокировка кнопки при вводе данных
+form.addEventListener('input', function() {
+  submitBtn.disabled = false;
+  message.textContent = '';
+  message.classList.remove('error', 'success');
+});
+
