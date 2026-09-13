@@ -44,7 +44,9 @@
 * 🎓 [Учебные модули Microsoft Learn по Windows Server](https://learn.microsoft.com/ru-ru/training/browse/?products=windows-server)
 
 ---
+### 🌐 Сетевые тренажеры и интерактивная практика
+* 🧮 [NetLab IPv4 Trainer](https://netlab-ipv4-trainer.ardent-ape-2691.chatgpt.site/#/home) — интерактивный тренажер по адресации и маскам подсетей IPv4.
+* 🕸️ [Интерактивный тренажер по сетевым топологиям](https://shviktor72.github.io/site_ro12_network_topology/#/) — наглядное пособие и практика по топологиям и устройству сетей.
 
 ## ✉️ Контакты и обратная связь
-
 📧 **Email:** [colledge20education23@gmail.com]
