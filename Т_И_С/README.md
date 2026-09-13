@@ -22,10 +22,10 @@
 ## 🔗 Полезные ресурсы и ссылки
 
 ### 🎓 Бесплатные курсы на Hexlet
-* 🐧 [Основы Linux](https://ru.hexlet.io/programs/linux-basics) — фундаментальные знания работы с командной строкой.
+* 💻 [Основы CLI (командной строки)](https://ru.hexlet.io/programs/cli-basics) — базовые навыки работы с терминалом и 인터фейсом командной строки.
+* 🐧 [Основы Linux](https://ru.hexlet.io/programs/linux-basics) — фундаментальные знания работы с ОС Linux.
 * 🌿 [Основы Git](https://ru.hexlet.io/programs/git-basics-free) — база работы с системой контроля версий.
 * 🐳 [Введение в Docker](https://ru.hexlet.io/programs/docker) — основы контейнеризации приложений.
-
 ---
 
 ### 🖥️ Практика и интерактивные тренажеры Linux
