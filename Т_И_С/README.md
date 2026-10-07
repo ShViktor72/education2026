@@ -49,4 +49,4 @@
 * 🕸️ [Интерактивный тренажер по сетевым топологиям](https://shviktor72.github.io/site_ro12_network_topology/#/) — наглядное пособие и практика по топологиям и устройству сетей.
 
 ## ✉️ Контакты и обратная связь
-📧 **Email:** [colledge20education23@gmail.com]
+📧 **Email:** colledge20education23@gmail.com

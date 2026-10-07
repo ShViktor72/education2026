@@ -22,4 +22,4 @@
 ---
 
 ## ✉️ Контакты и обратная связь
-📧 **Email:** [colledge20education23@g
+📧 **Email:** colledge20education23@gmail.com
