@@ -31,6 +31,9 @@
 ### 🖥️ Практика и интерактивные тренажеры Linux
 * 💻 [LinuxCheat](https://linuxcheat.ru/) — консольный тренажер для отработки команд.
 * 🧪 [LabEx Linux Playgrounds](https://labex.io/ru/playgrounds/linux) — онлайн-среда для выполнения практических задач.
+* 🧪 [Terminal](https://code.mu/ru/tool/terminal/) — Основы работы с терминалом.
+* 🧪 [Docker](https://code.mu/ru/tool/docker/book/prime/) — учебник Docker.
+
 
 ---
 
