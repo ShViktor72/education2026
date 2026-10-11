@@ -9,6 +9,7 @@
 ### 🌐 ПМ4: Разработка браузерных приложений
 ### ⚛️ ПМ5: Разработка веб-приложений на React
 ### 🧪 ПМ6: Поддержка и тестирование программных модулей
+### 🔹 ПМ7: Установка и сопровождение программного и аппаратного обеспечения
 
 ---
 
@@ -18,6 +19,9 @@
 * 🧱 [Объектно-ориентированный JavaScript (JS OOP)](https://ru.hexlet.io/programs/js-oop) — концепции ООП в экосистеме JavaScript.
 * ⚙️ [Введение в бэкенд (Node.js)](https://ru.hexlet.io/programs/backend) — основы разработки серверной части веб-приложений.
 * ⚛️ [Основы React](https://ru.hexlet.io/programs/react) — создание современных интерактивных пользовательских интерфейсов.
+* ⚛️ [Docker с нуля](https://ru.hexlet.io/programs/docker) — Научитесь упаковывать приложения в Docker, собирать образы через Dockerfile и поднимать окружение в Docker Compose.
+* ⚛️ [Администрирование Linux](https://ru.hexlet.io/programs/linux-basics) — Получите навык работы с Linux.
+* ⚛️ [Kubernetes](https://ru.hexlet.io/programs/kubernetes) — Научитесь разворачивать приложения в Kubernetes.
 
 ---
 
