@@ -5,3 +5,5 @@
 # PowerPoint presentations 
 **/*.ppt
 **/*.pptx
+
+**/*.log
